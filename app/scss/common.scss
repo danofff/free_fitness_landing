@@ -1,0 +1,55 @@
+@import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import "_variables.scss";
+
+%font-decoration {
+    font-family: $main-font;
+    text-transform: uppercase;
+}
+
+.main-container {
+    max-width: $main-container-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: $container-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header2 {
+    font-family: $main-font;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    color: $main-color;
+    font-weight: 700;
+}
+
+.colorize {
+    color: $accent-color;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 169px;
+    height: 46px;
+    text-align: center;
+    background-color: $accent-color;
+    font-weight: 700;
+    @extend %font-decoration;
+    font-size: $small-text;
+    color: $extra-color;
+    text-decoration: none;
+    letter-spacing: 1px;
+    &:focus {
+        outline: none;
+    }
+    @media (max-width: 407px) {
+        width: 140px;
+    }
+}

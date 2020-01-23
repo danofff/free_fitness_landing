@@ -1,0 +1,122 @@
+@import "_variables.scss";
+
+.trainers {
+    background-color: $background-color;
+    padding-bottom: 58px;
+    &__header {
+        background-image: url(../img/trainers__background.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        height: 586px;
+    }
+    .header__title {
+        @extend %font-decoration;
+        color: $extra-color;
+        text-align: center;
+        &_small {
+            font-weight: normal;
+            font-size: 2.25rem;
+            margin-left: 3px;
+            margin-top: 182px;;
+            margin-bottom: 15px;
+        }
+        &_large {
+            font-size: 4.375rem;
+            margin:0 6px 40px;
+        }
+        @media (max-width: 407px) {
+            &_smal {
+                
+            }
+            &_large {
+                font-size: 3rem;
+            }
+        }
+    }
+    &__content {
+        margin: 73px 30px 0;
+        color: $main-color;
+    }
+    .content__header {
+        margin: 0 0 19px;
+    }
+    &__text {
+        font-family: $main-font;
+        font-size: $small-text;
+        color: $light-color;
+    }
+    &__items {
+        margin-top: 110px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media (max-width: 1130px) {
+            justify-content: space-evenly;
+        }
+    }
+    &__item {
+        max-width: 350px;
+        &:last-child {
+            .trainers__photo {
+                margin-left: 9px;
+            }
+        }
+        .image__wrapper {
+            max-height: 340px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 37px;
+            img {
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 1130px) {
+            width: 48%;
+            min-width: 300px;
+            margin: 30px 1%;
+        }
+    }
+    &__name {
+        text-align: center;
+        font-family: $main-font;
+        font-weight: 700;
+        font-size: 1.625rem;
+        margin-bottom: 5px;
+    }
+    &__specification {
+        text-align: center;
+        color: $accent-color;
+        text-transform: uppercase;
+        font-family: $main-font;
+        font-size: $small-text;
+        margin: 0;
+        margin-bottom: 18px;
+    }
+    &__description {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.875;
+        font-family: $main-font;
+    }
+}
+
+
+.Our_staff_includes_amazing_professionals_that_h {
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: rgb(22, 20, 24);
+    line-height: 1.875;
+    text-align: center;
+    position: absolute;
+    left: 244.551px;
+    top: 4558.289px;
+    width: 337px;
+    height: 47px;
+    z-index: 106;
+  }
+  
