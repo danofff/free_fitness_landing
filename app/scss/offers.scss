@@ -9,6 +9,9 @@
         text-align: center;
         &:first-child {
             background-image: url(../img/offers-background-1.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         &:last-child {
             background-image: url(../img/offers-background-2.jpg);

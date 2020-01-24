@@ -19,6 +19,75 @@
     margin: 0 auto;
 }
 
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+.mobile-nav {
+    align-items: center;
+    position: fixed;
+    z-index: 102;
+    top: 0;
+    right: -80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    height: 100vh;
+    transition: all .2s ease-out;
+    .mobile-nav__items {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+        .close {
+            align-self: flex-end;
+            margin-right: 1rem;
+            .close-button {
+                font-size: 2rem;
+                color: $extra-color;
+                border: none;
+                margin-bottom: 2rem;
+                background-color: rgba(0, 0, 0, 0);
+                cursor: pointer;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-item {
+                margin: 0;
+                margin-bottom: 30px;
+                a {
+                    margin: 0;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+.mobile-nav-show {
+    right: 0;
+}
+
 .header2 {
     font-family: $main-font;
     text-transform: uppercase;

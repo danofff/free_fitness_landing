@@ -28,6 +28,15 @@
             margin: 0;
             padding: 0;
             margin-bottom: 36px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            @media (max-width: 400px) {
+                justify-content: center;
+                .items-wrapper {
+                    margin-top: 1rem;
+                }
+            }
         }
         &__header {
             font-size: 0.9375rem;
@@ -49,6 +58,9 @@
             .button {
                 height: 40px;
                 width: 150px;
+                @media (max-width: 439px) {
+                    width: 100%;
+                }
             }
         }
         &__email {
@@ -63,6 +75,10 @@
             }
             &:focus {
                 outline: none;
+            }
+            @media (max-width: 439px) {
+                width: 100%;
+                box-sizing: border-box;
             }
         }
 

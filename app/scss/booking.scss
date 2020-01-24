@@ -60,6 +60,16 @@
                 &::placeholder {
                     color: $main-color;
                 }
+                &_date {
+                    background-image: url(../img/date.svg);
+                    background-repeat: no-repeat;
+                    background-position: 106px -20px;
+                }
+                &_time {
+                    background-image: url(../img/time.svg);
+                    background-repeat: no-repeat;
+                    background-position: 106px -20px;
+                }
             }
             select {
                 appearance: none;
